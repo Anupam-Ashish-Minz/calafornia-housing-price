@@ -2,7 +2,7 @@
 
     \usepackage[breakable]{tcolorbox}
     \usepackage{parskip} % Stop auto-indenting (to mimic markdown behaviour)
-
+    
 
     % Basic figure setup, for now with no caption control since it's done
     % automatically by Pandoc (which extracts ![](path) syntax from Markdown).
@@ -164,11 +164,10 @@
     \renewcommand{\LaTeX}{\textrm{\Oldlatex}}
     % Document parameters
     % Document title
-    \title{TensorGo Assignment}
-    \author{Anupam Ashish Minz}
-    \date{}
-
-    % \description{dataset: California Housing Price\\dataset\_url: https://www.kaggle.com/datasets/camnugent/california-housing-prices/data?select=housing.csv }
+    \title{Assignment}
+    
+    
+    
     
     
 % Pygments definitions
@@ -392,9 +391,15 @@
     
     \section{TensorGo Assignment}\label{tensorgo-assignment}
 
+author: Anupam Ashish Minz
+
+dataset: California Housing Price
+
+dataset\_url:
+https://www.kaggle.com/datasets/camnugent/california-housing-prices/data?select=housing.csv
 
     \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
-\prompt{In}{incolor}{1}{\boxspacing}
+\prompt{In}{incolor}{7}{\boxspacing}
 \begin{Verbatim}[commandchars=\\\{\}]
 \PY{k+kn}{from} \PY{n+nn}{langchain\PYZus{}community}\PY{n+nn}{.}\PY{n+nn}{llms} \PY{k+kn}{import} \PY{n}{Ollama}
 \PY{k+kn}{import} \PY{n+nn}{matplotlib}\PY{n+nn}{.}\PY{n+nn}{pyplot} \PY{k}{as} \PY{n+nn}{plt}
@@ -405,14 +410,14 @@
 \end{tcolorbox}
 
     \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
-\prompt{In}{incolor}{2}{\boxspacing}
+\prompt{In}{incolor}{8}{\boxspacing}
 \begin{Verbatim}[commandchars=\\\{\}]
 \PY{n}{df} \PY{o}{=} \PY{n}{pd}\PY{o}{.}\PY{n}{read\PYZus{}csv}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{housing.csv}\PY{l+s+s2}{\PYZdq{}}\PY{p}{)}
 \end{Verbatim}
 \end{tcolorbox}
 
     \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
-\prompt{In}{incolor}{3}{\boxspacing}
+\prompt{In}{incolor}{9}{\boxspacing}
 \begin{Verbatim}[commandchars=\\\{\}]
 \PY{n}{df}\PY{o}{.}\PY{n}{info}\PY{p}{(}\PY{p}{)}
 \end{Verbatim}
@@ -439,21 +444,21 @@ memory usage: 1.6+ MB
     \end{Verbatim}
 
     \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
-\prompt{In}{incolor}{4}{\boxspacing}
+\prompt{In}{incolor}{10}{\boxspacing}
 \begin{Verbatim}[commandchars=\\\{\}]
 \PY{n}{df}\PY{o}{.}\PY{n}{dropna}\PY{p}{(}\PY{n}{inplace}\PY{o}{=}\PY{k+kc}{True}\PY{p}{)}
 \end{Verbatim}
 \end{tcolorbox}
 
     \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
-\prompt{In}{incolor}{5}{\boxspacing}
+\prompt{In}{incolor}{11}{\boxspacing}
 \begin{Verbatim}[commandchars=\\\{\}]
 \PY{n}{df}\PY{o}{.}\PY{n}{ocean\PYZus{}proximity}\PY{o}{.}\PY{n}{unique}\PY{p}{(}\PY{p}{)}
 \end{Verbatim}
 \end{tcolorbox}
 
             \begin{tcolorbox}[breakable, size=fbox, boxrule=.5pt, pad at break*=1mm, opacityfill=0]
-\prompt{Out}{outcolor}{5}{\boxspacing}
+\prompt{Out}{outcolor}{11}{\boxspacing}
 \begin{Verbatim}[commandchars=\\\{\}]
 array(['NEAR BAY', '<1H OCEAN', 'INLAND', 'NEAR OCEAN', 'ISLAND'],
       dtype=object)
@@ -468,14 +473,14 @@ The following graphs are histograms, they are used here to show the
 distribution of the data
 
     \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
-\prompt{In}{incolor}{6}{\boxspacing}
+\prompt{In}{incolor}{12}{\boxspacing}
 \begin{Verbatim}[commandchars=\\\{\}]
 \PY{n}{df}\PY{o}{.}\PY{n}{hist}\PY{p}{(}\PY{n}{figsize}\PY{o}{=}\PY{p}{(}\PY{l+m+mi}{15}\PY{p}{,} \PY{l+m+mi}{8}\PY{p}{)}\PY{p}{,} \PY{n}{bins}\PY{o}{=}\PY{l+m+mi}{50}\PY{p}{)}
 \end{Verbatim}
 \end{tcolorbox}
 
             \begin{tcolorbox}[breakable, size=fbox, boxrule=.5pt, pad at break*=1mm, opacityfill=0]
-\prompt{Out}{outcolor}{6}{\boxspacing}
+\prompt{Out}{outcolor}{12}{\boxspacing}
 \begin{Verbatim}[commandchars=\\\{\}]
 array([[<Axes: title=\{'center': 'longitude'\}>,
         <Axes: title=\{'center': 'latitude'\}>,
@@ -500,7 +505,7 @@ The following is a heatmap, it is used here to show the correlation of
 attributes with respect to each other
 
     \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
-\prompt{In}{incolor}{7}{\boxspacing}
+\prompt{In}{incolor}{13}{\boxspacing}
 \begin{Verbatim}[commandchars=\\\{\}]
 \PY{n}{ndf} \PY{o}{=} \PY{n}{df}\PY{o}{.}\PY{n}{select\PYZus{}dtypes}\PY{p}{(}\PY{n}{include}\PY{o}{=}\PY{p}{[}\PY{n}{np}\PY{o}{.}\PY{n}{number}\PY{p}{]}\PY{p}{)}
 \PY{n}{plt}\PY{o}{.}\PY{n}{figure}\PY{p}{(}\PY{n}{figsize}\PY{o}{=}\PY{p}{(}\PY{l+m+mi}{15}\PY{p}{,} \PY{l+m+mi}{8}\PY{p}{)}\PY{p}{)}
@@ -509,7 +514,7 @@ attributes with respect to each other
 \end{tcolorbox}
 
             \begin{tcolorbox}[breakable, size=fbox, boxrule=.5pt, pad at break*=1mm, opacityfill=0]
-\prompt{Out}{outcolor}{7}{\boxspacing}
+\prompt{Out}{outcolor}{13}{\boxspacing}
 \begin{Verbatim}[commandchars=\\\{\}]
 <Axes: >
 \end{Verbatim}
@@ -550,7 +555,7 @@ dtype: float64
 strings we have to use special functions
 
     \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
-\prompt{In}{incolor}{15}{\boxspacing}
+\prompt{In}{incolor}{16}{\boxspacing}
 \begin{Verbatim}[commandchars=\\\{\}]
 \PY{n}{ocorr} \PY{o}{=} \PY{n}{df}\PY{o}{.}\PY{n}{ocean\PYZus{}proximity}\PY{o}{.}\PY{n}{str}\PY{o}{.}\PY{n}{get\PYZus{}dummies}\PY{p}{(}\PY{p}{)}\PY{o}{.}\PY{n}{corrwith}\PY{p}{(}\PY{n}{df}\PY{o}{.}\PY{n}{median\PYZus{}house\PYZus{}value}\PY{p}{)}
 \PY{n+nb}{print}\PY{p}{(}\PY{n}{ocorr}\PY{p}{)}
@@ -566,6 +571,46 @@ NEAR OCEAN    0.140378
 dtype: float64
     \end{Verbatim}
 
+    \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
+\prompt{In}{incolor}{21}{\boxspacing}
+\begin{Verbatim}[commandchars=\\\{\}]
+\PY{n}{description} \PY{o}{=} \PY{n}{df}\PY{o}{.}\PY{n}{describe}\PY{p}{(}\PY{p}{)}
+\PY{n+nb}{print}\PY{p}{(}\PY{n}{description}\PY{p}{)}
+\end{Verbatim}
+\end{tcolorbox}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+          longitude      latitude  housing\_median\_age   total\_rooms  \textbackslash{}
+count  20433.000000  20433.000000        20433.000000  20433.000000
+mean    -119.570689     35.633221           28.633094   2636.504233
+std        2.003578      2.136348           12.591805   2185.269567
+min     -124.350000     32.540000            1.000000      2.000000
+25\%     -121.800000     33.930000           18.000000   1450.000000
+50\%     -118.490000     34.260000           29.000000   2127.000000
+75\%     -118.010000     37.720000           37.000000   3143.000000
+max     -114.310000     41.950000           52.000000  39320.000000
+
+       total\_bedrooms    population    households  median\_income  \textbackslash{}
+count    20433.000000  20433.000000  20433.000000   20433.000000
+mean       537.870553   1424.946949    499.433465       3.871162
+std        421.385070   1133.208490    382.299226       1.899291
+min          1.000000      3.000000      1.000000       0.499900
+25\%        296.000000    787.000000    280.000000       2.563700
+50\%        435.000000   1166.000000    409.000000       3.536500
+75\%        647.000000   1722.000000    604.000000       4.744000
+max       6445.000000  35682.000000   6082.000000      15.000100
+
+       median\_house\_value
+count        20433.000000
+mean        206864.413155
+std         115435.667099
+min          14999.000000
+25\%         119500.000000
+50\%         179700.000000
+75\%         264700.000000
+max         500001.000000
+    \end{Verbatim}
+
     Here we are injecting the desciption of the data and the correlation
 values calculated above into the llm
 
@@ -575,7 +620,7 @@ values calculated above into the llm
 \PY{n}{system\PYZus{}message} \PY{o}{=} \PY{l+s+sa}{f}\PY{l+s+s2}{\PYZdq{}\PYZdq{}\PYZdq{}}
 \PY{l+s+s2}{you are currently working on the calafornia housing price dataset}
 \PY{l+s+s2}{some key indication in the dataset are as follows}
-\PY{l+s+si}{\PYZob{}}\PY{n}{df}\PY{o}{.}\PY{n}{describe}\PY{p}{(}\PY{p}{)}\PY{l+s+si}{\PYZcb{}}
+\PY{l+s+si}{\PYZob{}}\PY{n}{description}\PY{l+s+si}{\PYZcb{}}
 \PY{l+s+s2}{the correlation of median house values with respect to give paramters are as follows}
 \PY{l+s+si}{\PYZob{}}\PY{n}{corr}\PY{l+s+si}{\PYZcb{}}
 \PY{l+s+s2}{and the correlation of median house values with respect to proximity of ocean is as follows}
@@ -585,7 +630,7 @@ values calculated above into the llm
 \end{tcolorbox}
 
     \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
-\prompt{In}{incolor}{11}{\boxspacing}
+\prompt{In}{incolor}{18}{\boxspacing}
 \begin{Verbatim}[commandchars=\\\{\}]
 \PY{n}{llm} \PY{o}{=} \PY{n}{Ollama}\PY{p}{(}\PY{n}{model}\PY{o}{=}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{mistral}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{n}{system}\PY{o}{=}\PY{n}{system\PYZus{}message}\PY{p}{)}
 \PY{k}{for} \PY{n}{s} \PY{o+ow}{in} \PY{n}{llm}\PY{o}{.}\PY{n}{stream}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{what are some characteristics of the give dataset}\PY{l+s+s2}{\PYZdq{}}\PY{p}{)}\PY{p}{:}
@@ -595,44 +640,38 @@ values calculated above into the llm
 
     \begin{Verbatim}[commandchars=\\\{\}]
  Based on the provided information, here are some characteristics of the
-California Housing Price dataset:
+California housing price dataset:
 
-1. The dataset contains information about 20,433 housing units in California.
-Each row represents a single housing unit.
-
-2. The dataset includes several features such as longitude, latitude, housing
-median age, total rooms, total bedrooms, population, households, median income,
-median house value, and proximity to the ocean (1H OCEAN, INLAND, ISLAND, NEAR
-BAY, and NEAR OCEAN).
-
-3. The mean values of longitude and latitude are -119.57 and 35.63,
-respectively. The standard deviations for longitude and latitude are 2.00 and
-2.14, respectively. This indicates that the housing units in the dataset are
-spread out across a large geographical area.
-
-4. The mean values of housing median age, total rooms, and total bedrooms are
-28.63, 2636.5, and 537.9, respectively. The standard deviations for housing
-median age, total rooms, and total bedrooms are 12.6, 2185.3, and 421.4,
-respectively. This suggests that there is a significant variation in the number
-of rooms and bedrooms across different housing units.
-
-5. The mean value of median income is 3.87, indicating that the average
-household income is relatively low.
-
-6. The correlation analysis shows that the proximity to the ocean (1H OCEAN) has
-a positive correlation with median house values, while being inland has a
-negative correlation. This suggests that houses located near the ocean tend to
-have higher median house values than those located inland.
-
-7. The correlation between median house values and other features such as
-housing median age, total rooms, total bedrooms, population, households, and
-median income is relatively weak. However, there is a moderate positive
-correlation between median house values and median income. This suggests that
-higher income households tend to live in houses with higher median values.
+1. The dataset contains information about 20,433 houses or housing units in
+California.
+2. The longitude and latitude coordinates provide the geographical location of
+each house.
+3. Housing-related features include median age (in years), total rooms, total
+bedrooms, and household size.
+4. Demographic features include population and median income for the
+neighborhood or area where each house is located.
+5. The dataset also includes a categorical variable "proximity of ocean," which
+indicates whether a house is located near the ocean (INLAND, NEAR BAY, NEAR
+OCEAN, <1H OCEAN, or ISLAND).
+6. The primary outcome variable is the median housing value or price for each
+house.
+7. The mean median housing age is 28.6 years with a standard deviation of 12.59
+years.
+8. The mean total rooms and total bedrooms are 2,636.5 and 537.9, respectively.
+9. The mean population size for the neighborhood or area is 1,424.9 persons with
+a standard deviation of 1,133.2.
+10. The mean median income for the area is \$3,871.
+11. The correlation between median housing values and most features (longitude,
+latitude, housing\_median\_age, total\_rooms, population, and households) are weak
+to moderate. However, median housing values have a strong positive correlation
+with median income and proximity to the ocean (INLAND, NEAR BAY, NEAR OCEAN, <1H
+OCEAN, or ISLAND).
+12. The median housing price is \$206,864.41, but it ranges from a minimum of
+\$14,999 to a maximum of \$500,001.
     \end{Verbatim}
 
     \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
-\prompt{In}{incolor}{12}{\boxspacing}
+\prompt{In}{incolor}{19}{\boxspacing}
 \begin{Verbatim}[commandchars=\\\{\}]
 \PY{k}{for} \PY{n}{s} \PY{o+ow}{in} \PY{n}{llm}\PY{o}{.}\PY{n}{stream}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{which condition affect the median house price the most}\PY{l+s+s2}{\PYZdq{}}\PY{p}{)}\PY{p}{:}
     \PY{n+nb}{print}\PY{p}{(}\PY{n}{s}\PY{p}{,} \PY{n}{end}\PY{o}{=}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{\PYZdq{}}\PY{p}{)}
@@ -640,24 +679,19 @@ higher income households tend to live in houses with higher median values.
 \end{tcolorbox}
 
     \begin{Verbatim}[commandchars=\\\{\}]
- Based on the provided correlation coefficients, it appears that the proximity
-of a housing unit to the ocean or a body of water (as indicated by the "NEAR
-OCEAN" and "NEAR BAY" features) has a positive correlation with median house
-prices. This means that houses that are closer to bodies of water tend to have
-higher median house prices compared to those that are further inland.
-
-The correlation coefficient between median house values and proximity to the
-ocean is 0.140378, which is relatively strong compared to some of the other
-features in the dataset. Additionally, the correlation coefficient for "INLAND"
-is negative (-0.484787), indicating that houses located inland tend to have
-lower median house prices compared to those near bodies of water or the ocean.
-
-However, it's important to note that correlation does not necessarily imply
-causation. Other factors such as location within a city or county, neighborhood
-quality, access to amenities, and demographic characteristics can also
-significantly impact housing prices. Therefore, while proximity to water appears
-to have an effect on median house prices in this dataset, it's just one of many
-potential contributing factors.
+ Based on the correlation values provided, it appears that the proximity of a
+housing unit to the ocean or a body of water (as represented by the variables
+"<1H OCEAN," INLAND," ISLAND," NEAR BAY," and NEAR OCEAN) has a stronger
+relationship with median house prices than other features such as longitude,
+latitude, housing age, total rooms, total bedrooms, population, households, or
+median income. Specifically, houses near the ocean or bodies of water tend to
+have higher median house prices (as indicated by a positive correlation), while
+houses inland tend to have lower median house prices (as indicated by a negative
+correlation). However, it's important to keep in mind that correlation does not
+imply causation, and there may be other factors at play that are influencing
+housing prices in these areas. It would be useful to explore additional data and
+perform further analysis to better understand the relationship between housing
+prices and these variables.
     \end{Verbatim}
 
     \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
