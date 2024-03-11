@@ -408,6 +408,9 @@
     Some minor other analysis performed is analysing how the data is, this is 
     done with the help of histograms, standard devition and mean value.
 
+    The goal of this analysis is to find which factors contribute to the 
+    overall house price.
+
 
     \section{Notebook}\label{notebook}
 
@@ -541,7 +544,7 @@ attributes with respect to each other
     \end{center}
     { \hspace*{\fill} \\}
     
-    \subsection{llm}\label{llm}
+    \subsection{LLMs}\label{llm}
 
     As median\_house\_value is the only value that is of important to us, we
 are only generating the correlations with respect to that particual
@@ -645,6 +648,8 @@ values calculated above into the llm
 \end{Verbatim}
 \end{tcolorbox}
 
+    \subsection{Prompting} \label{prompting}
+
     \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
 \prompt{In}{incolor}{18}{\boxspacing}
 \begin{Verbatim}[commandchars=\\\{\}]
@@ -717,6 +722,26 @@ prices and these variables.
 \end{Verbatim}
 \end{tcolorbox}
 
+    \section{Conclusions}
+
+    \subsection{Analysis}
+
+    After performing the analysis there seem to be a strong but not very strong 
+    correlation between like the median income and ocean proximity.
+
+    The storgest correration factor is median income which is at 0.688355 which 
+    indicates a good positive correlation. On the other end inland properties 
+    seem to be negativly correlate with a value of -0.484787 which indicates a 
+    negative correlation. Also properties that are near the ocean be at most 
+    an hour drive seem to show a week positive correlation with the value of 
+    0.257614.
+
+    \subsection{LLMs}
+
+    Here in the mistral model by MistralAI is used to show that the data
+    generated from the analysis of the dataset can be inject into the model and
+    then used by other's the inquire about the dataset as demonstared in the
+    section \ref{prompting}
 
     % Add a bibliography block to the postdoc
     
