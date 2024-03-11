@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Arch Linux) (preloaded format=pdflatex 2024.1.24)  11 MAR 2024 22:53
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Arch Linux) (preloaded format=pdflatex 2024.1.24)  11 MAR 2024 23:05
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -763,36 +763,36 @@ Package: mathrsfs 1996/01/01 Math RSFS package v1.0 (jk)
 )
 \Wrappedcontinuationbox=\box88
 \Wrappedvisiblespacebox=\box89
-Package hyperref Info: Option `breaklinks' set `true' on input line 378.
-Package hyperref Info: Option `colorlinks' set `true' on input line 378.
+Package hyperref Info: Option `breaklinks' set `true' on input line 379.
+Package hyperref Info: Option `colorlinks' set `true' on input line 379.
 
 (/usr/share/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2023-01-16 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count326
 \l__pdf_internal_box=\box90
 )
-No file Assignment.aux.
+(./Assignment.aux)
 \openout1 = `Assignment.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 385.
-LaTeX Font Info:    ... okay on input line 385.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 385.
-LaTeX Font Info:    ... okay on input line 385.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 385.
-LaTeX Font Info:    ... okay on input line 385.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 385.
-LaTeX Font Info:    ... okay on input line 385.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 385.
-LaTeX Font Info:    ... okay on input line 385.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 385.
-LaTeX Font Info:    ... okay on input line 385.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 385.
-LaTeX Font Info:    ... okay on input line 385.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 385.
-LaTeX Font Info:    ... okay on input line 385.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 385.
-LaTeX Font Info:    ... okay on input line 385.
-(/usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 386.
+LaTeX Font Info:    ... okay on input line 386.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 386.
+LaTeX Font Info:    ... okay on input line 386.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 386.
+LaTeX Font Info:    ... okay on input line 386.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 386.
+LaTeX Font Info:    ... okay on input line 386.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 386.
+LaTeX Font Info:    ... okay on input line 386.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 386.
+LaTeX Font Info:    ... okay on input line 386.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 386.
+LaTeX Font Info:    ... okay on input line 386.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 386.
+LaTeX Font Info:    ... okay on input line 386.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 386.
+LaTeX Font Info:    ... okay on input line 386.
+ (/usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count327
 \scratchdimen=\dimen303
@@ -861,46 +861,39 @@ Package caption Info: End \AtBeginDocument code.
 (/usr/share/texmf-dist/tex/latex/ucs/ucsencs.def
 File: ucsencs.def 2011/01/21 Fixes to fontencodings LGR, T3
 )
-Package hyperref Info: Link coloring ON on input line 385.
+Package hyperref Info: Link coloring ON on input line 386.
+ (./Assignment.out)
+(./Assignment.out)
 \@outlinefile=\write5
 \openout5 = `Assignment.out'.
 
-LaTeX Font Info:    Trying to load font information for U+msa on input line 387
+LaTeX Font Info:    Trying to load font information for U+msa on input line 388
 .
-
-(/usr/share/texmf-dist/tex/latex/amsfonts/umsa.fd
+ (/usr/share/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 387
+LaTeX Font Info:    Trying to load font information for U+msb on input line 388
 .
 
 (/usr/share/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Trying to load font information for U+rsfs on input line 38
-7.
+8.
 
 (/usr/share/texmf-dist/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
+LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 3
+97.
 
-LaTeX Warning: No \author given.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 398--400
-[]\T1/cmr/m/n/10.95 dataset_url: https://www.kaggle.com/datasets/camnugent/cali
-fornia-housing-
- []
-
-LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 4
-02.
 (/usr/share/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2022/07/10 v2.5l Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `T1/cmtt/bx/n' in size <10.95> not available
-(Font)              Font shape `T1/cmtt/m/n' tried instead on input line 404.
+(Font)              Font shape `T1/cmtt/m/n' tried instead on input line 399.
 LaTeX Font Info:    Trying to load font information for TS1+cmtt on input line 
-427.
+422.
 
 (/usr/share/texmf-dist/tex/latex/base/ts1cmtt.fd
 File: ts1cmtt.fd 2022/07/10 v2.5l Standard LaTeX font definitions
@@ -909,45 +902,35 @@ File: ts1cmtt.fd 2022/07/10 v2.5l Standard LaTeX font definitions
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texmf-dist/fonts
 /enc/dvips/cm-super/cm-super-t1.enc}{/usr/share/texmf-dist/fonts/enc/dvips/cm-s
 uper/cm-super-ts1.enc}]
-<output_8_1.png, id=19, 894.7026pt x 492.8814pt>
+<output_8_1.png, id=38, 894.7026pt x 492.8814pt>
 File: output_8_1.png Graphic file (type png)
 <use output_8_1.png>
-Package pdftex.def Info: output_8_1.png  used on input line 498.
+Package pdftex.def Info: output_8_1.png  used on input line 493.
 (pdftex.def)             Requested size: 894.70042pt x 492.88019pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 500--501
+Underfull \hbox (badness 10000) in paragraph at lines 495--496
 
  []
 
-[2 <./output_8_1.png>]
-<output_10_1.png, id=31, 901.2069pt x 575.9919pt>
+<output_10_1.png, id=40, 901.2069pt x 575.9919pt>
 File: output_10_1.png Graphic file (type png)
 <use output_10_1.png>
-Package pdftex.def Info: output_10_1.png  used on input line 524.
+Package pdftex.def Info: output_10_1.png  used on input line 519.
 (pdftex.def)             Requested size: 901.2047pt x 575.99048pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 526--527
+[2 <./output_8_1.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 521--522
 
  []
 
 [3 <./output_10_1.png>] [4] [5] (./Assignment.aux)
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-
-Package rerunfilecheck Warning: File `Assignment.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `Assignment.out':
-(rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  39205DAC9E3BE6E1D85525F44012EA0E;514.
+Package rerunfilecheck Info: File `Assignment.out' has not changed.
+(rerunfilecheck)             Checksum: 39205DAC9E3BE6E1D85525F44012EA0E;514.
  ) 
 Here is how much of TeX's memory you used:
- 25207 strings out of 477985
- 465952 string characters out of 5840058
- 1928388 words of memory out of 5000000
- 44944 multiletter control sequences out of 15000+600000
+ 25219 strings out of 477985
+ 466129 string characters out of 5840058
+ 1935388 words of memory out of 5000000
+ 44950 multiletter control sequences out of 15000+600000
  525422 words of font info for 69 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  101i,7n,104p,503b,643s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -959,10 +942,10 @@ m-super/sfbx1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx144
 re/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf-dist/f
 onts/type1/public/cm-super/sfrm1728.pfb></usr/share/texmf-dist/fonts/type1/publ
 ic/cm-super/sftt1095.pfb>
-Output written on Assignment.pdf (5 pages, 289345 bytes).
+Output written on Assignment.pdf (5 pages, 287990 bytes).
 PDF statistics:
- 94 PDF objects out of 1000 (max. 8388607)
- 63 compressed objects within 1 object stream
+ 110 PDF objects out of 1000 (max. 8388607)
+ 79 compressed objects within 1 object stream
  11 named destinations out of 1000 (max. 500000)
- 23 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 63 words of extra memory for PDF output out of 10000 (max. 10000000)
 
