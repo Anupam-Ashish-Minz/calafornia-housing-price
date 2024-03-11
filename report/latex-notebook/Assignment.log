@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Arch Linux) (preloaded format=pdflatex 2024.1.24)  11 MAR 2024 23:18
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Arch Linux) (preloaded format=pdflatex 2024.1.24)  11 MAR 2024 23:27
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -884,20 +884,19 @@ LaTeX Font Info:    Trying to load font information for U+rsfs on input line 38
 (/usr/share/texmf-dist/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
-Underfull \hbox (badness 10000) in paragraph at lines 397--399
-[]\T1/cmr/m/n/10.95 dataset_url: https://www.kaggle.com/datasets/camnugent/cali
-fornia-housing-
+Underfull \hbox (badness 10000) in paragraph at lines 392--398
+
  []
 
 LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 4
-01.
+03.
 (/usr/share/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2022/07/10 v2.5l Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `T1/cmtt/bx/n' in size <10.95> not available
-(Font)              Font shape `T1/cmtt/m/n' tried instead on input line 403.
+(Font)              Font shape `T1/cmtt/m/n' tried instead on input line 405.
 LaTeX Font Info:    Trying to load font information for TS1+cmtt on input line 
-426.
+430.
 
 (/usr/share/texmf-dist/tex/latex/base/ts1cmtt.fd
 File: ts1cmtt.fd 2022/07/10 v2.5l Standard LaTeX font definitions
@@ -906,39 +905,39 @@ File: ts1cmtt.fd 2022/07/10 v2.5l Standard LaTeX font definitions
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texmf-dist/fonts
 /enc/dvips/cm-super/cm-super-t1.enc}{/usr/share/texmf-dist/fonts/enc/dvips/cm-s
 uper/cm-super-ts1.enc}]
-<output_8_1.png, id=38, 894.7026pt x 492.8814pt>
+<output_8_1.png, id=48, 894.7026pt x 492.8814pt>
 File: output_8_1.png Graphic file (type png)
 <use output_8_1.png>
-Package pdftex.def Info: output_8_1.png  used on input line 497.
+Package pdftex.def Info: output_8_1.png  used on input line 501.
 (pdftex.def)             Requested size: 894.70042pt x 492.88019pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 499--500
+Underfull \hbox (badness 10000) in paragraph at lines 503--504
 
  []
 
 [2 <./output_8_1.png>]
-<output_10_1.png, id=47, 901.2069pt x 575.9919pt>
+<output_10_1.png, id=56, 901.2069pt x 575.9919pt>
 File: output_10_1.png Graphic file (type png)
 <use output_10_1.png>
-Package pdftex.def Info: output_10_1.png  used on input line 523.
+Package pdftex.def Info: output_10_1.png  used on input line 527.
 (pdftex.def)             Requested size: 901.2047pt x 575.99048pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 525--526
+Underfull \hbox (badness 10000) in paragraph at lines 529--530
 
  []
 
 [3 <./output_10_1.png>] [4] [5] [6] (./Assignment.aux)
 Package rerunfilecheck Info: File `Assignment.out' has not changed.
-(rerunfilecheck)             Checksum: 39205DAC9E3BE6E1D85525F44012EA0E;514.
+(rerunfilecheck)             Checksum: 02E2F01E4298DDDA14E525A5FECA1FF3;649.
  ) 
 Here is how much of TeX's memory you used:
- 25228 strings out of 477985
- 466355 string characters out of 5840058
+ 25226 strings out of 477985
+ 466205 string characters out of 5840058
  1976388 words of memory out of 5000000
- 44958 multiletter control sequences out of 15000+600000
+ 44954 multiletter control sequences out of 15000+600000
  525422 words of font info for 69 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 101i,7n,104p,503b,744s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 101i,7n,104p,503b,649s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/t
 exmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texmf-dist/fonts
 /type1/public/cm-super/sfbx1095.pfb></usr/share/texmf-dist/fonts/type1/public/c
@@ -947,10 +946,10 @@ m-super/sfbx1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx144
 re/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf-dist/f
 onts/type1/public/cm-super/sfrm1728.pfb></usr/share/texmf-dist/fonts/type1/publ
 ic/cm-super/sftt1095.pfb>
-Output written on Assignment.pdf (6 pages, 292804 bytes).
+Output written on Assignment.pdf (6 pages, 294678 bytes).
 PDF statistics:
- 114 PDF objects out of 1000 (max. 8388607)
- 82 compressed objects within 1 object stream
- 12 named destinations out of 1000 (max. 500000)
- 63 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 124 PDF objects out of 1000 (max. 8388607)
+ 92 compressed objects within 1 object stream
+ 14 named destinations out of 1000 (max. 500000)
+ 79 words of extra memory for PDF output out of 10000 (max. 10000000)
 
